@@ -1,0 +1,112 @@
+
+.contact{
+    letter-spacing:0.8px;
+    opacity:0;
+    transition:all 0.4s ease-in-out;
+}
+
+.contactForm{
+    width:75%;
+    margin:2rem;
+    padding:7rem 2.5rem;
+    border:2px solid rgb(65, 67, 70);
+    border-radius:0.5rem;
+}
+
+body.dark .contactForm{
+    border-color:rgb(182, 190, 202);
+}
+
+.contactForm form{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:2.5rem;
+}
+
+.label{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0.4rem;
+    font-size:0.8em;
+    font-weight:600;
+    color:rgb(65, 67, 70);
+}
+
+body.dark .label{
+    color:rgb(182, 190, 202);
+}
+
+#message,#name,#email{
+    width:450px;
+    padding:2px;
+    font-size:1rem;
+    background-color:transparent;
+    border:none;
+    border-bottom:2px solid rgb(65, 67, 70);
+    transition:all 0.3s ease-in-out;
+    outline:none;
+}
+
+body.dark #message,body.dark #name,body.dark #email{
+    border-color:rgb(182, 190, 202);
+    color:#FFF;
+}
+
+label[for="message"]{
+    gap:0;
+}
+
+#message{
+    margin:-2.7rem 0;
+    padding: 0;
+    height:8rem;
+}
+
+#message:focus, #name:focus, #email:focus{
+    border-color:#000;
+}
+
+body.dark #message:focus,body.dark #name:focus,body.dark #email:focus{
+    border-color:#FFF;
+}
+
+.sendBtn{
+    margin-top:4rem;
+    padding:0.6rem 0.9rem;
+    font-weight:600;
+    color:rgb(65, 67, 70);
+    border:2px solid rgb(65, 67, 70);
+    border-radius:0.4rem;
+    transition:all 0.3s ease-in-out;
+}
+
+body.dark .sendBtn{
+    border-color:rgb(182, 190, 202);
+    color:rgb(182, 190, 202);
+}
+
+.sendBtn:hover{
+    background-color:#000;
+    border-color:#000;
+    color:#FFF;
+}
+
+body.dark .sendBtn:hover{
+    color:#000;
+    background-color:rgb(25, 199, 199);
+    border-color:rgb(25, 199, 199);
+}
+
+@media only screen and (max-width:1300px){
+    .contactForm{
+        width:90%;
+        margin:2rem auto 0 auto;
+        padding:4rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #message,#name,#email{
+        width:90%;
+    }
+}
