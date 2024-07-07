@@ -39,7 +39,7 @@ export default function Home() {
                     </button>
                 </a>
 
-                <a href="https://www.linkedin.com/in/aayush-kumar-kumawat/" target="_blank">
+                <a href="www.linkedin.com/in/aastha-modi11" target="_blank">
                     <button
                         className="linkedInBtn flex"
                         onMouseEnter={() => {connectBtnImgRef.current.src = paperPlaneLight}}
