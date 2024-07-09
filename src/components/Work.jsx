@@ -24,7 +24,7 @@ export default function Work() {
 
    
     const dictionaryProject = {
-        projectTitle: 'Amazon Clone',
+        projectTitle: 'Amazon UI Clone',
         projectDescription: 'A responsive e-commerce interface built with React, featuring a search bar, product listings, detailed product pages, shopping cart, checkout, and user authentication for a seamless shopping experience.',
         projectImage: dictionaryProjectImage,
         projectImageAltText: 'Amazon Project',
@@ -65,16 +65,17 @@ export default function Work() {
         }
     };
 
-    return (
-        <section id="work" className="work flex">
-            <h2>Work showcase:</h2>
-            <div className="myWork flex">
-                <WorkCard projectDetails={dictionaryProject} />
-                <WorkCard projectDetails={ipAddressProject} />
-                <WorkCard projectDetails={clockProject} />
-                <WorkCard projectDetails={calculatorProject} />
+  // Array of all projects.
+  const projects = [dictionaryProject, ipAddressProject, clockProject, calculatorProject];
 
-            </div>
-        </section>
-    );
+  return (
+      <section id="work" className="work flex">
+          <h2>Work showcase:</h2>
+          <div className="myWork flex">
+              {
+                  projects.map((project) => <WorkCard key={project["projectTitle"]} projectDetails={project} />)
+              }
+          </div>
+      </section>
+  );
 };

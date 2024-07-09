@@ -28,7 +28,7 @@ export default function Home() {
             </p>
 
             <div className="homeButtons flex">
-                <a href="https://github.com/AASTHA2020" target="_blank">
+            <a href="https://github.com/AASTHA2020" target="_blank">
                     <button
                         className="gitHubBtn flex"
                         onMouseEnter={() => {workBtnImgRef.current.src = cookieBiteLight}}
@@ -39,7 +39,7 @@ export default function Home() {
                     </button>
                 </a>
 
-                <a href="www.linkedin.com/in/aastha-modi11" target="_blank">
+                <a href="https://www.linkedin.com/in/aastha-modi-a24450255/" target="_blank">
                     <button
                         className="linkedInBtn flex"
                         onMouseEnter={() => {connectBtnImgRef.current.src = paperPlaneLight}}
